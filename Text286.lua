@@ -60,7 +60,7 @@ totalDaysValue:GetPropertyChangedSignal("Value"):Connect(function()
 		lastDay = currentDay
 		print("Cambio de día detectado! Esperando 10 segundos antes de abrir puerta...")
 		task.spawn(function()
-			task.wait(10)
+			task.wait(20)
 			openDoor()
 		end)
 	end
